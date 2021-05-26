@@ -1,3 +1,11 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+  path: /
+  controller: App\Controller\WebController::index
+get_reviews:
+  path: /api/reviews/{hotelId}/{from}/{to}
+  controller: App\Controller\ReviewController::get
+  methods: [GET]
+  requirements:
+    hotelId: '[1-9]\d*'
+    from: '[1-9]\d*'
+    to: '[1-9]\d*'

@@ -1,0 +1,30 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+.banner {
+  text-align: center;
+}
+
+.filter {
+  position: relative;
+  border: 1px solid;
+  margin: 15px;
+  padding: 15px 20px;
+
+  .filter__logo {
+    position: absolute;
+    top:-13px;
+    padding: 0 10px;
+    background-color: #FFFFFF;
+    display: block;
+    z-index: 100;
+  }
+}
+.chart-wrapper__chart {
+  > div.apexcharts-canvas { // That class if autommatically created by the chart dependency so it can follow BEM
+    margin: auto;
+  }
+}
+
+.error-wrapper {
+  min-height: 58px;
+  margin: 15px;
+}

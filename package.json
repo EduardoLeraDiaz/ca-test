@@ -1,0 +1,66 @@
+{
+  "name": "customer-alliance-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Eduardo Lera Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/polyfill": "7.12.1",
+    "apexcharts": "^3.26.3",
+    "axios": "^0.21.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.0.1",
+    "bootstrap": "^5.0.1",
+    "core-js": "^3.12.1",
+    "vue": "^2.6.12",
+    "vue-apexcharts": "^1.6.1",
+    "vue-jest": "^3.0.7",
+    "vue-mq": "^1.0.1",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.16",
+    "@babel/core": "7.12.16",
+    "@babel/preset-env": "7.12.16",
+    "@vue/test-utils": "^1.1.3",
+    "axios-mock-adapter": "^1.19.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "23.6.0",
+    "babel-loader": "7.0.0",
+    "css-loader": "^5.2.6",
+    "install": "^0.13.0",
+    "jest": "^27.0.1",
+    "jest-mock-random": "1.1.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "npm": "^7.14.0",
+    "sass": "^1.34.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "vue-loader": "^15.9.7",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "name": "ca-test",
+    "jest": {
+      "verbose": true
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    }
+  }
+}
